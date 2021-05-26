@@ -3,7 +3,7 @@ node {
    def mvnHome
    stage('Prepare') {
       git url: 'https://github.com/Bhuvana301299/devops-springboot-cicd-kubernetes.git', branch: 'master'
-      mvnHome = tool 'maven'
+      mvnHome = tool 'mvn'
    }
 
     stage('Build') {
